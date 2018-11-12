@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--  namespace 속성은 현재 XML 파일을 나타내는 id와 같은 정보. 절대 중복 x -->
+<mapper namespace="com.tje.model.MemberMapper">
+
+<select id="count" resultType="java.lang.Integer">
+select count(*) from member
+</select>
+
+<select id="allRecord" resultType="java.tje.model.Member">
+select count(*) from member
+</select>
+
+
+
+
+</mapper>
